@@ -1,5 +1,5 @@
 import java.util.*;
-public class isPalindrome {
+public class _10_isPalindrome {
     //TC:O(N)
     public static boolean isPalindrome(String s){
         int start=0;

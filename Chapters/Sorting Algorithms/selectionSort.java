@@ -1,10 +1,5 @@
 import java.util.*;
 public class selectionSort {
-    /*
-    Time Complexity:
-    Best Case : O(n^2)
-    Worst Case : O(n^2) 
-    */
     public static void sort(int[] arr){
         int n = arr.length;
         for(int i=0; i<n-1; i++){
@@ -34,3 +29,11 @@ public class selectionSort {
         }
     }
 }
+/*
+Time Complexity 
+-----------------
+Best Case : O(N^2)
+Worst Case : O(N^2)
+Average Case : O(N^2)
+Not depend on input nature
+*/

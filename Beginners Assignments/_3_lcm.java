@@ -3,7 +3,7 @@ import java.util.*;
  LCM = (a*b)/GCD(a,b)
  GCD = (a*b)/LCM(a,b)
  */
-public class lcm {
+public class _3_lcm {
     public static List<Integer> getPrimeFactors(int num){
         List<Integer> primeFactors = new ArrayList<>();
         for(int i=2; i*i<=num; i++){

@@ -1,5 +1,5 @@
 import java.util.*;
-public class pascalsTriangle {
+public class _13_pascalsTriangle {
     public static void printPascalsTriangle(int n){
         int[][] pascal = new int[n+1][n+1];
         pascal[0][0] = 1;

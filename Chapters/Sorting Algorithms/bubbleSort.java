@@ -1,11 +1,6 @@
 import java.util.*;
 public class bubbleSort {
-    /*
-    Time Complexity
-    Best Case : O(N)--> Already sorted Array
-    Worst Case : O(N^2)--> Reversely sorted Array
-    Average Case : O(N^2)--> Arranged randomly  
-    */
+    
     public static void sort(int[] arr){
         int n = arr.length;
         for(int i=n-1; i>0; i--){
@@ -37,3 +32,10 @@ public class bubbleSort {
         }
     }
 }
+/*
+Time Complexity:
+---------------
+Worst Case : O(N^2) => Array already sorted in our revered codition
+Best Case : O(N) => Array already sorted
+Average Case : O(N^2) => Array elements arranged in random order
+*/
