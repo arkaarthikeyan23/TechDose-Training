@@ -6,7 +6,7 @@ import java.util.*;
   if n is even --> return average of two middle elements
  Mode : most occurred elements
  */
-public class ___9meanMedianMode {
+public class _0009meanMedianMode {
 
     public static double getMean(int[] a){
         int n=a.length, sum=0;

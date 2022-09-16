@@ -1,4 +1,4 @@
-public class __21concatArray {
+public class _021concatArray {
     public int[] getConcatenation(int[] nums) {
         int n = nums.length;
         int[] concatArr = new int[2*nums.length];

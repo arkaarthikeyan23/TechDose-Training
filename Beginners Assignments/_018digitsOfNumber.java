@@ -1,5 +1,5 @@
 import java.util.*;
-public class __18digitsOfNumber {
+public class _018digitsOfNumber {
     public static void printDigits(int n){
         
         while(n>0){

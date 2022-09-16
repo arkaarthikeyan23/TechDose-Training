@@ -1,6 +1,6 @@
 import java.util.*;
 //TC: O(N)
-public class ___1secondMax {
+public class _0001secondMax {
     public static int getSecondMax(int[] a){
         int n = a.length;
         int max1 =Integer.MIN_VALUE, max2 = Integer.MIN_VALUE;

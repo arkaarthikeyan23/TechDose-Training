@@ -1,5 +1,5 @@
 import java.util.*;
-public class __14isPerfectSquare {
+public class _014isPerfectSquare {
     //TC:O(root(n))
     public static boolean isSquare1(int n){
         if(n==0){

@@ -1,5 +1,5 @@
 import java.util.*;
-public class ___8sumOfNnaturalNos {
+public class _0008sumOfNnaturalNos {
     public static int getSum1(int n){
         int sum=0;
         for(int i=1; i<=n; i++){

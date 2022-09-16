@@ -1,5 +1,5 @@
 import java.util.*;
-public class __19isPerfectSquare {
+public class _019isPerfectSquare {
     //Binary Search --> O(log(N))
     public static boolean isPerfectSquare(int n){
         int left=1, right=n;

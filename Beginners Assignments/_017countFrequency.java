@@ -1,5 +1,5 @@
 import java.util.*;
-public class __17countFrequency {
+public class _017countFrequency {
     public static void printFrequency(String s){
         Map<Character,Integer> map = new LinkedHashMap<>();
         for(char ch : s.toCharArray()){
