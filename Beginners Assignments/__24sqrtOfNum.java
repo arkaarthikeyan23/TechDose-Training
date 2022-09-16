@@ -1,4 +1,4 @@
-public class _24_sqrtOfNum {
+public class __24sqrtOfNum {
     //TC : O(log(N)) SC : O(1)
     public int mySqrt(int x) {
         if(x<=1)

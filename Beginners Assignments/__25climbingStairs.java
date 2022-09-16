@@ -1,4 +1,4 @@
-public class _25_climbingStairs {
+public class __25climbingStairs {
     //TC : O(N), SC : O(N)
     public int climbStairs(int n) {
         int[] steps = new int[n+1];

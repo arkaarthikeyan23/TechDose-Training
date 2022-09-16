@@ -1,5 +1,5 @@
 import java.util.*;
-public class _15_addIntToFloat {
+public class __15addIntToFloat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         float num1 = sc.nextFloat();

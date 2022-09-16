@@ -1,5 +1,5 @@
 import java.util.*;
-public class _5_areaOfCircle {
+public class ___5areaOfCircle {
     public static double getArea(int radius){
         return (Math.PI)*((radius)*(radius));
     }

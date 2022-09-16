@@ -1,4 +1,4 @@
-public class _22_stringToInt {
+public class __22stringToInt {
     public int myAtoi(String s) {
         int index=0, result=0, n = s.length();
         boolean negative=false;

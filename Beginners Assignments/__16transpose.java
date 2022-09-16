@@ -1,5 +1,5 @@
 import java.util.*;
-public class _16_transpose {
+public class __16transpose {
     public static void printTranspose(int[][] mat){
         int n = mat.length;
         for(int i=0; i<n; i++){

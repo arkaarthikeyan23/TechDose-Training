@@ -1,5 +1,5 @@
 import java.util.*;
-public class _2_gcd {
+public class ___2gcd {
     //Euclidean's Algorithm --> TC:O(log(min(a,b)))
     public static int getGCD(int a, int b){
         if(a==0)

@@ -1,5 +1,5 @@
 import java.util.*;
-public class _12_factorial {
+public class __12factorial {
     public static long getFactorial(int n){
         if(n==0){
             return 1;

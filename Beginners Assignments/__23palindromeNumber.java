@@ -1,4 +1,4 @@
-public class _23_palindromeNumber {
+public class __23palindromeNumber {
     public boolean isPalindrome(int x) {
         /*-ve no is not a palindrome
         if last digit is 0, then first digit should be 0 to be a palindrome*/

@@ -1,5 +1,5 @@
 import java.util.*;
-public class _11_swap {
+public class __11swap {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt(), num2 = sc.nextInt();
