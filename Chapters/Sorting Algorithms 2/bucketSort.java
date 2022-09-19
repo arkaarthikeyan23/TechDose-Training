@@ -10,15 +10,14 @@ public class bucketSort {
         for(int i=0; i<=max; i++){
             buckets.add(new ArrayList<>());
         }
-
+        //inserting elements in bucket
         for(int i=0; i<n; i++){
             buckets.get(arr[i]).add(arr[i]);
         }
-
         int index=0;
         for(int i=0; i<=max; i++){
             for(int j=0; j<buckets.get(i).size(); j++){
-                arr[index++] = buckets.get(i).get(j); 
+                arr[index++] = buckets.get(i).get(j);
             }
         }
         return arr;
