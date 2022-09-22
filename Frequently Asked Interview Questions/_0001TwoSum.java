@@ -1,5 +1,5 @@
 import java.util.*;
-public class _1TwoSum {
+public class _0001TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> map = new HashMap<>();
         
