@@ -1,23 +1,22 @@
 import java.util.*;
 public class QuickSelect
 {
+    public static void swap(int[] arr, int start, int end){
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+    }
+
     public static int partition(int[] arr, int low, int high){
-        int pivot = arr[high], pivotLoc=low;
-        for(int i=low; i<=high; i++){
-            // inserting elements of less value
-            // to the left of the pivot location
-            if(arr[i]<pivot){
-                int temp = arr[i];
-                arr[i] = arr[pivotLoc];
-                arr[pivotLoc] = temp;
-                pivotLoc++;
+        int pivot = arr[high], i=low-1;
+        for(int j=low; j<=high-1; j++){
+            if(arr[j]<=pivot){
+                i++;
+                swap(arr,i,j);
             }
         }
-        // swapping pivot to the final pivot location
-        int temp = arr[high];
-        arr[high] = arr[pivotLoc];
-        arr[pivotLoc] = temp;
-        return pivotLoc;
+        swap(arr,i+1,high);
+        return i+1;
     }
 
     public static int kthSmallestElement(int[] arr, int low, int high, int k){
