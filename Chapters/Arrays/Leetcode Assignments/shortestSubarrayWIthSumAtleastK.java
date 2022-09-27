@@ -14,7 +14,7 @@ public class shortestSubarrayWIthSumAtleastK {
             if(sum>=k){
                 shortestLen = Math.min(shortestLen,i+1);
             }
-            Pair curr = new Pair(Integer.MIN_VALUE,Integer.MIN_VALUE);
+            Pair<Long,Integer> curr = new Pair<Long,Integer>(Long.MIN_VALUE,Integer.MIN_VALUE);
             //Reduce the window size to find minimum window with sum>=k
             while(!dq.isEmpty() && (sum - dq.getFirst().getKey()) >= k){
                 curr = dq.getFirst();
@@ -28,7 +28,7 @@ public class shortestSubarrayWIthSumAtleastK {
             while(!dq.isEmpty() && sum <= dq.getLast().getKey()){
                 dq.removeLast();
             }
-            dq.addLast(new Pair(sum,i));
+            dq.addLast(new Pair<>(sum,i));
         }
         return shortestLen==Integer.MAX_VALUE?-1:shortestLen;
     }
