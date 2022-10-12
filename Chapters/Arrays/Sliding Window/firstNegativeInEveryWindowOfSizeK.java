@@ -4,28 +4,16 @@ public class firstNegativeInEveryWindowOfSizeK {
     public static List<Integer> firstNegativeElement(int[]arr, int k){
         Deque<Integer> dq = new LinkedList<>();
         List<Integer> result = new ArrayList<>();
-        for(int i=0; i<k; i++){
-            if(arr[i]<0){
-                dq.offer(i);
-            }
-        }
-        for(int i=k; i<arr.length; i++){
-            if(!dq.isEmpty()){
-                result.add(arr[dq.getFirst()]);
-            }else{
-                result.add(0);
-            }
-            while(!dq.isEmpty() && dq.getFirst() <= i-k){
+        for(int i=0; i<arr.length; i++){
+            if(!dq.isEmpty() && dq.peekFirst() == i-k){
                 dq.removeFirst();
             }
             if(arr[i]<0){
-                dq.offer(i);
+                dq.add(i);
             }
-        }
-        if(!dq.isEmpty()){
-            result.add(arr[dq.getFirst()]);
-        }else{
-            result.add(0);
+            if(i>=k-1){
+                result.add(dq.isEmpty()?0:arr[dq.peekFirst()]);
+            }
         }
         return result;
     }
