@@ -1,6 +1,6 @@
 //Find the element that occur more than N/K times
 import java.util.*;
-public class  MajorityElement2 {
+public class  MajorityElement3 {
     public static List<Integer> getMajorityElement(int[] arr, int k){
         int n = arr.length;
         List<Integer> result = new ArrayList<>();

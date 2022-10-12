@@ -5,7 +5,7 @@ public class shortestSubarrayWIthSumAtleastK {
         int n = nums.length;
         Deque<Pair<Long,Integer>> dq = new ArrayDeque<>();
         
-        long sum=0;
+        long sum=0; 
         int shortestLen = Integer.MAX_VALUE;
        
         for(int i=0; i<n; i++){
