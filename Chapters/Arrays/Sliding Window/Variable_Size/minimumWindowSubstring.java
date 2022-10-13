@@ -1,3 +1,4 @@
+package Variable_Size;
 public class minimumWindowSubstring
 {
     public String minWindow(String s, String t) {
