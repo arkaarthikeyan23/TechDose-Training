@@ -1,4 +1,4 @@
-public class SolvingQuestions {
+public class SolvingQuestions2140 {
     public long mostPoints(int[][] questions) {
         int n = questions.length;
         long[] dp = new long[n];

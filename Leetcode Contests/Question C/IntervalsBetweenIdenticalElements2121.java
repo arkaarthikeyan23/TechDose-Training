@@ -1,5 +1,5 @@
 import java.util.*;
-public class IntervalsBetweenIdenticalElements {
+public class IntervalsBetweenIdenticalElements2121 {
     public long[] getDistances(int[] arr) {
         int n = arr.length;
         long[] result = new long[n];

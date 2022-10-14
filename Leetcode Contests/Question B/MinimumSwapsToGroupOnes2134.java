@@ -1,4 +1,4 @@
-public class MinimumSwaosToGroupOnes2134 {
+public class MinimumSwapsToGroupOnes2134 {
     //Sliding Window
     public int minSwaps(int[] nums) {
         int n = nums.length; 

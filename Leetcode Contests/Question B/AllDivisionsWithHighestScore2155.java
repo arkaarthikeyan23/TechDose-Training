@@ -1,5 +1,5 @@
 import java.util.*;
-public class AllDivisionsWithHighestScore {
+public class AllDivisionsWithHighestScore2155 {
     public List<Integer> maxScoreIndices(int[] nums) {
         List<Integer> ans = new ArrayList<>();
         int ones=0;
