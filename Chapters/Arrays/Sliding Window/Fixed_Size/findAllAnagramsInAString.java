@@ -1,4 +1,3 @@
-package Fixed_Size;
 import java.util.*;
 //LC : 438
 public class findAllAnagramsInAString
