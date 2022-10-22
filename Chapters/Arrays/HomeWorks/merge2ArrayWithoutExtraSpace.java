@@ -1,5 +1,5 @@
 import java.util.*;
-public class merge2ArrWithoutExtraSpace {
+public class merge2ArrayWithoutExtraSpace {
     //TC:O(m*n) SC:O(1);
     public static void merge(int[]arr1, int m, int[]arr2, int n){
         //Traversing list 2 from right to left
