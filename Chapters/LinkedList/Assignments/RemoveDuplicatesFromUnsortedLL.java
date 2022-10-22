@@ -1,16 +1,15 @@
+package Assignments;
 import java.util.HashSet;
 
 public class RemoveDuplicatesFromUnsortedLL {
-    static Node head;
     public static class Node{
         private int data;
         private Node next;
         Node(int data){
             this.data = data;
-            next = null;
         }
     }
-    public static void removeDuplicates(){
+    public static void removeDuplicates(Node head){
         HashSet<Integer> set = new HashSet<>();
         Node curr = head, prev = null;
         while(curr!=null){
@@ -24,11 +23,12 @@ public class RemoveDuplicatesFromUnsortedLL {
         }
     }
 
-    public static void display(){
+    public static void display(Node head){
         Node temp = head;
         System.out.println("The elements in linked list are: ");
         while(temp!=null){
             System.out.print(temp.data+"->");
+            temp = temp.next;
         }
         System.out.print("NULL");
     }
@@ -38,9 +38,9 @@ public class RemoveDuplicatesFromUnsortedLL {
         ll.next.next = new Node(11);
         ll.next.next.next = new Node(15);
         ll.next.next.next.next = new Node(18);
-        display();
-        removeDuplicates();
-        display();
+        display(ll);
+        removeDuplicates(ll);
+        display(ll);
     }
     
 }
