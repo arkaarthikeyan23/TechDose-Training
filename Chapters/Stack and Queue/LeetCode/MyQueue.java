@@ -1,3 +1,4 @@
+package LeetCode;
 import java.util.Stack;
 //LC:232
 public class MyQueue {

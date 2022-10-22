@@ -1,3 +1,4 @@
+package LeetCode;
 import java.util.Stack;
 public class LargestRectangleInHistogram84 {
     public int largestRectangleArea(int[] heights) {
