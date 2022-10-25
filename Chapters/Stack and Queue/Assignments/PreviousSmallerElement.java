@@ -1,19 +1,19 @@
-package Assignments;
-
-import java.util.*;
+import java.util.Stack;
 public class PreviousSmallerElement {
     public static void main(String[] args) {
-        int[] arr = new int[]{18,7,6,12,15};
+        int[] arr = new int[]{18,7,6,12,10};
         int n = arr.length;
         int[] pse = new int[n];
         Stack<Integer> stk = new Stack<>();
-        //left to right increasing order
-        for(int i=0; i<n; i++){
-            while(!stk.isEmpty() && arr[i] <= arr[stk.peek()]){
-                stk.pop();
+        //greater or equal elements can be pushed over top of the stack
+        for(int i=n-1; i>=0; i--){
+            while(!stk.isEmpty() && arr[i] < arr[stk.peek()]){
+                pse[stk.pop()] = arr[i];
             }
-            pse[i] = stk.isEmpty()?-1:arr[stk.peek()];
             stk.push(i);
+        }
+        while(!stk.isEmpty()){
+            pse[stk.pop()] = -1;
         }
         for(int val : pse){
             System.out.print(val+" ");

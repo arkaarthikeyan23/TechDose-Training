@@ -1,19 +1,19 @@
-package Assignments;
-
 import java.util.Stack;
 public class NextGreaterElement {
     public static void main(String[] args) {
-        int[] arr = new int[]{18,7,6,12,15};
+        int[] arr = new int[]{18,7,6,12,10};
         int n = arr.length;
         int[] nge = new int[n];
         Stack<Integer> stk = new Stack<>();
-        //Right to left decreasing order
-        for(int i=n-1; i>=0; i--){
-            while(!stk.isEmpty() && arr[i] >= arr[stk.peek()]){
-                stk.pop();
+        //smaller or equal elements can be pushed over top of the stack
+        for(int i=0; i<n; i++){
+            while(!stk.isEmpty() && arr[i] > arr[stk.peek()]){
+                nge[stk.pop()] = arr[i];
             }
-            nge[i] = stk.isEmpty()?-1:arr[stk.peek()];
             stk.push(i);
+        }
+        while(!stk.isEmpty()){
+            nge[stk.pop()] = -1;
         }
         for(int val : nge){
             System.out.print(val+" ");
