@@ -1,59 +1,37 @@
 import java.util.Stack;
 //Design stack which supports getmin in O(1) time and space
-public class MinStack {
-    static Stack<Integer> stk;
-    static int min;
-    public MinStack(){
+//LC:155
+class MinStack {
+    Stack<Long> stk;
+    long min;
+    public MinStack() {
         stk = new Stack<>();
     }
     
-    void push(int curr){
+    public void push(int val) {
         if(stk.isEmpty()){
-            stk.push(curr);
-            min = curr;
-            return;
-        }
-        else if(curr>=min){
-            stk.push(curr);
-        }
-        else{
-            min = curr;
-            stk.push(2*curr - min);
-        }
-    }
-
-    void pop(){
-        int curr = stk.peek();
-        if(stk.isEmpty()){
-            System.out.println("Stack is Empty");
-        }
-        else if(curr>=min){
-            System.out.println(stk.pop());
-        }
-        else{
-            System.out.println(min);
-            min = 2*min - curr;
-        }
-    }
-
-    void getMin(){
-        if(stk.isEmpty()){
-            System.out.println("Stack is Empty");
-        }
-        else{
-            System.out.println(min);
-        }
-    }
-
-    void peek(){
-        int curr = stk.peek();
-        if(stk.isEmpty()){
-            System.out.println("Stack is Empty");
-        }
-        else if(curr>=min){
-            System.out.println(min);
+            stk.push(Long.valueOf(val));
+            min = val;
+        }else if(val >= min){
+            stk.push(Long.valueOf(val));
         }else{
-            System.out.println(curr);
+            stk.push(2*Long.valueOf(val) - min);
+            min = Long.valueOf(val);
         }
+    }
+    
+    public void pop() {
+        long popped = stk.pop();
+        if(popped < min){
+            min = 2*min - popped;
+        }
+    }
+    
+    public int top() {
+        return (int)((stk.peek()>=min)? stk.peek() : min);
+    }
+    
+    public int getMin() {
+        return (int)min;
     }
 }
