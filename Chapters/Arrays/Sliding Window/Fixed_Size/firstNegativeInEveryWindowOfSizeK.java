@@ -1,4 +1,4 @@
-package Fixed_Size;
+
 import java.util.*;
 public class firstNegativeInEveryWindowOfSizeK {
     //TC:O(N) SC:O(K)

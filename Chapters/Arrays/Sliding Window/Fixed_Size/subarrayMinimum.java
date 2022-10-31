@@ -1,4 +1,4 @@
-package Fixed_Size;
+
 import java.util.*;
 public class subarrayMinimum {
     public static void main(String[] args) {

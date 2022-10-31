@@ -1,4 +1,4 @@
-package Fixed_Size;
+
 import java.util.*;
 public class longestSubarraySumEqualsK {
     public static int longestSubarray(int[] arr, int n, int k){
