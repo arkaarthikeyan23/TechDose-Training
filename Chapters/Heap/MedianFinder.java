@@ -1,4 +1,4 @@
-package TechDose_Training.Chapters.Heap;
+
 import java.util.*;
 class MedianFinder {
     private PriorityQueue<Integer> minHeap = null;
