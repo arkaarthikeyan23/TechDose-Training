@@ -1,4 +1,3 @@
-package LeetCode;
 
 public class PalindromeLinkedList234 {
     public class ListNode {

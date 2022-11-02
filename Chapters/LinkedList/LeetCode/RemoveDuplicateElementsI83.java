@@ -1,4 +1,3 @@
-package LeetCode;
 
 public class RemoveDuplicateElementsI83{
     public class ListNode {

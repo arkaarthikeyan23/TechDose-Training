@@ -1,5 +1,3 @@
-package LeetCode;
-
 public class ReverseNodesInKgroups25 {
     public class ListNode {
         int val;

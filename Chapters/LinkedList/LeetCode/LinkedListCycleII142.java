@@ -1,4 +1,4 @@
-package LeetCode;
+
 //Find the starting point of a cycle
 public class LinkedListCycleII142 {
     public class ListNode {

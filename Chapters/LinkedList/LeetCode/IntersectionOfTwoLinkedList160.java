@@ -1,4 +1,4 @@
-package LeetCode;
+
 
 public class IntersectionOfTwoLinkedList160 {
     public class ListNode {
