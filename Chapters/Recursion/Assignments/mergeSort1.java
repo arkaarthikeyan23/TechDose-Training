@@ -1,3 +1,4 @@
+package Assignments;
 public class mergeSort1 {
 
     public static void merge(int[] nums, int low, int mid, int high){

@@ -1,3 +1,4 @@
+package Assignments;
 import java.util.ArrayList;
 
 public class GenerateAllSubsets1{

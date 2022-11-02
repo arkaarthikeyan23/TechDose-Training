@@ -1,3 +1,4 @@
+package Assignments;
 public class fibonacci1 {
     public static int fib(int n){
         if(n==0 || n==1){

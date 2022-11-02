@@ -1,3 +1,4 @@
+package Assignments;
 public class StringPermutations {
 
     public static void swap(char[] arr, int start, int end){

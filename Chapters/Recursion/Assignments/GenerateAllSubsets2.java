@@ -1,3 +1,4 @@
+package Assignments;
 import java.util.*;
 public class GenerateAllSubsets2 {
     static List<List<Integer>> allSubSets = new ArrayList<>();

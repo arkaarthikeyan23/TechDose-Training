@@ -1,3 +1,4 @@
+package Assignments;
 public class SumOfNnos {
 
     public static int sumOfNnos(int n){
