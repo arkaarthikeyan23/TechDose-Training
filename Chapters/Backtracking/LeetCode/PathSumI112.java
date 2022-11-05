@@ -1,5 +1,3 @@
-package LeetCode;
-
 public class PathSumI112 {
     //Definition for a binary tree node.
     public class TreeNode {

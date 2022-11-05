@@ -1,4 +1,3 @@
-package LeetCode;
 import java.util.*;
 public class PathSumII113 {
     //Definition for a binary tree node.
