@@ -1,3 +1,4 @@
+package Leetcode;
 public class LowestCommonAncestor236 {
     //Definition for a binary tree node.
     public class TreeNode {

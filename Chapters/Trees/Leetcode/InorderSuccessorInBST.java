@@ -1,3 +1,4 @@
+package Leetcode;
 public class InorderSuccessorInBST {
     static class TreeNode{
         int val;

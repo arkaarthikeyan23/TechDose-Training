@@ -1,3 +1,4 @@
+package Leetcode;
 public class ValidateBinarySearchTree98 {
     //Definition for a binary tree node.
     public class TreeNode {

@@ -1,3 +1,4 @@
+package Leetcode;
 public class SymmetricTree101 {
     //Definition for a binary tree node.
     public class TreeNode {

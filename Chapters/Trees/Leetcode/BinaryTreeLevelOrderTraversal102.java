@@ -1,5 +1,6 @@
+package Leetcode;
 import java.util.*;
-public class BinaryTreeZigZagLevelOrderTraversal103 {
+public class BinaryTreeLevelOrderTraversal102 {
     //Definition for a binary tree node.
     public class TreeNode {
         int val;
@@ -9,24 +10,20 @@ public class BinaryTreeZigZagLevelOrderTraversal103 {
     }
     //TC:O(N) 
     //SC:O(N)
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
         if(root==null){
             return ans;
         }
+        
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
-        boolean leftToRight = true;
         while(!q.isEmpty()){
             int size = q.size();
-            LinkedList<Integer> ll = new LinkedList<>();
+            List<Integer> currList = new ArrayList<>();
             while(size-->0){
                 TreeNode curr = q.poll();
-                if(leftToRight){
-                    ll.add(curr.val);
-                }else{
-                    ll.addFirst(curr.val);
-                }
+                currList.add(curr.val);
                 if(curr.left!=null){
                     q.offer(curr.left);
                 }
@@ -34,8 +31,7 @@ public class BinaryTreeZigZagLevelOrderTraversal103 {
                     q.offer(curr.right);
                 }
             }
-            leftToRight = !leftToRight;
-            ans.add(ll);
+            ans.add(new ArrayList<>(currList));
         }
         return ans;
     }

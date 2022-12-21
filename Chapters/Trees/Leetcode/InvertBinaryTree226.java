@@ -1,3 +1,4 @@
+package Leetcode;
 public class InvertBinaryTree226 {
     //Definition for a binary tree node.
     public class TreeNode {

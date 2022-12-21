@@ -1,3 +1,4 @@
+package Leetcode;
 public class UniqueBinarySearchTrees96 {
     public int numTrees(int n) {
         int[] catalan = new int[n+1];
