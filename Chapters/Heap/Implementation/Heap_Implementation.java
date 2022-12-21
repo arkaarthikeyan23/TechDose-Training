@@ -1,4 +1,4 @@
-package TechDose_Training.Chapters.Heap.Implementation;
+package Chapters.Heap.Implementation;
 //MAX HEAP  (1 index based array)
 class Heap{
     //TC:O(logN)

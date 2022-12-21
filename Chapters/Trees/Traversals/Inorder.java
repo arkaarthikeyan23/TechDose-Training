@@ -1,4 +1,4 @@
-package Chapters.Trees.Traversals;
+package Traversals;
 import java.util.Stack;
 //TC:O(N) SC:O(N)
 public class Inorder {
