@@ -5,7 +5,7 @@ public class NextGreaterElement {
         int n = arr.length;
         int[] nge = new int[n];
         Stack<Integer> stk = new Stack<>();
-        //smaller or equal elements can be pushed over top of the stack
+        //smaller or equal elements can be pushed over top of the stack 
         for(int i=0; i<n; i++){
             while(!stk.isEmpty() && arr[i] > arr[stk.peek()]){
                 nge[stk.pop()] = arr[i];
