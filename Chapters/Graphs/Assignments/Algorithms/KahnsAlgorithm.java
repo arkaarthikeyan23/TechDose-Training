@@ -1,3 +1,5 @@
+package Chapters.Graphs.Assignments.Algorithms;
+
 import java.util.*;
 //BFS: TC:O(V+E)
 public class KahnsAlgorithm {

@@ -1,10 +1,8 @@
-import java.util.*;
-//package Chapters.Graphs.Assignments;
+package Chapters.Graphs.Assignments;
 
-public class IsGraphBipartite {
-    
-}
-TC:O(V+E)
+import java.util.*;
+
+//TC:O(V+E)
 public class IsGraphBipartite{
     public boolean isBipartite1(List<List<Integer>> al, int[] color, int node){
         Queue<Integer> q = new LinkedList<>();

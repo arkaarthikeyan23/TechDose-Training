@@ -1,39 +1,36 @@
+package Chapters.Graphs.Assignments;
 import java.util.*;
-
-public class DSUFoptimized{
-    class node{
-        int parent, rank;
-    }    
-    static node dsuf[];
-
+//TC:O(ElogV)
+public class DSUF_PathCompression_UnionByRank{
+    static int[][] dsuf;
     //FIND by PATH COMPRESSION
     public static int find(int v){
-        if(dsuf[v].parent == -1){
+        if(dsuf[v][0] == -1){
             return v;
         }
-        return dsuf[v].parent = find(dsuf[v].parent);//path compression
+        return dsuf[v][0] = find(dsuf[v][0]);//path compression
     }
 
     //UNION by RANK
     public static void union(int fromP, int toP){
-        if(dsuf[fromP].rank > dsuf[toP].rank){//fromP has higher rank
-            dsuf[toP].parent = fromP;
+        if(dsuf[fromP][1] > dsuf[toP][1]){//fromP has higher rank
+            dsuf[toP][0] = fromP;
         }
-        else if(dsuf[toP].rank > dsuf[fromP].rank){//toP has higher rank
-            dsuf[fromP].parent = toP;
+        else if(dsuf[toP][1] > dsuf[fromP][1]){//toP has higher rank
+            dsuf[fromP][0] = toP;
         }
         else{//If same rank increment the absolute parent by 1
-            dsuf[fromP].parent = toP;
-            dsuf[toP].rank +=1;
+            dsuf[fromP][0] = toP;
+            dsuf[toP][1] +=1;
         }
     }
 
     public static boolean isCyclic(List<int[]> edges){
         for(int[] curr : edges){
-            int fromP = curr[0];
-            int toP = curr[1];
+            int fromP = find(curr[0]);
+            int toP = find(curr[1]);
 
-            if(find(fromP) == find(toP)){
+            if(fromP == toP){
                 return true;
             }
             union(fromP, toP);
@@ -46,6 +43,12 @@ public class DSUFoptimized{
         int v = sc.nextInt();
         int e = sc.nextInt();
 
+        dsuf = new int[v][2];
+        for(int i=0; i<v; i++){
+            dsuf[i][0] = -1;
+            dsuf[i][1] = 0;
+        }
+
         List<int[]> edges = new ArrayList<>();
         for(int i=0; i<e; i++){
             int fromP = sc.nextInt();
@@ -54,11 +57,7 @@ public class DSUFoptimized{
             edges.add(new int[]{fromP, toP});
         }
         sc.close();
-        dsuf = new node[v];
-        for(int i=0; i<v; i++){
-            dsuf[i].parent = -1;
-            dsuf[i].rank = 0;
-        }
+        
 
         if(isCyclic(edges)){
             System.out.println("Cycle is detected!!");

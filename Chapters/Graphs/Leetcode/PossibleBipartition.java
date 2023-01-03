@@ -1,3 +1,5 @@
+package Chapters.Graphs.Leetcode;
+
 import java.util.*;
 //TC:O(V+E)
 public class PossibleBipartition{
