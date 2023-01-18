@@ -1,4 +1,3 @@
-package Chapters.Graphs.Leetcode;
 import java.util.*;
 public class CourseScheduleII {
     public static int[] bfs(List<List<Integer>> al, int[] indegree, int n){

@@ -1,4 +1,3 @@
-package Chapters.Graphs.Leetcode;
 import java.util.*;
 public class CourseSchedule {
     //Using Kahn's algorithm

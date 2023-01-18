@@ -1,4 +1,3 @@
-package Chapters.Graphs.Leetcode;
 import java.util.*;
 class AllPathsFromSourceToTarget {
 
@@ -18,7 +17,7 @@ class AllPathsFromSourceToTarget {
                 dfs(ans, graph, visited, pathStack, val, dest);
             }
         }
-        pathStack.pop();
+        pathStack.pop(); 
         visited[src] = false;
     }
 

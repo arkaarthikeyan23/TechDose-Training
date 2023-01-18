@@ -1,5 +1,3 @@
-package Chapters.Graphs.Leetcode;
-
 import java.util.*;
 
 class FindIfPathExists {
