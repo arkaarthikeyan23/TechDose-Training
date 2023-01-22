@@ -1,4 +1,3 @@
-package LeetCode;
 import java.util.*;
 public class WordBreak139 {
     private class TrieNode{

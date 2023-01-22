@@ -1,5 +1,3 @@
-package SegmentTrees.LeetCode;
-
 class RangeSumQueryMutable {
     int[] st;
     int n;
