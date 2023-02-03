@@ -3,14 +3,7 @@ import java.util.Scanner;
 public class mergeSort2 {
     //wihtout using extra space
     public static void merge(int[] arr, int low, int mid, int high){
-        
-        if((high-low)==1){
-            int e1 = arr[low], e2 = arr[high];
-            arr[low] = Math.min(e1,e2);
-            arr[high] = Math.max(e1,e2);
-            return;
-        }
-        
+                
         for(int i=high; i>=mid+1; i--){
             int j;
             int last = arr[mid];
