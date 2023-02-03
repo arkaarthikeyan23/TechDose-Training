@@ -17,7 +17,7 @@ public class mergeSort2 {
             for(j=mid-1; j>=low && arr[j]>arr[i]; j--){
                 arr[j+1] = arr[j];
             }
-            if(last>arr[i]){
+            if(j!=mid-1 || last>arr[i]){
                 arr[j+1] = arr[i];
                 arr[i] = last;
             }
